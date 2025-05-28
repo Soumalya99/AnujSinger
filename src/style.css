@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+  .font-playfair-display { font-family: 'Playfair Display', serif; }
+
+.marquee {
+  animation: marquee-scroll 40s linear infinite;
+}
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.spinner {
+  border: 6px solid #044fe5; /* Tailwind gray-200 */
+  border-top: 6px solid #e68824; /* Your secondary color or accent */
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+  /* Center the spinner if needed */
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+@keyframes shine {
+  0% {
+    left: -75%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
+.animate-shine {
+  animation: shine 1.2s linear forwards;
+}
+
+
+@keyframes shine {
+  0% {
+    left: -75%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
+.shine-animate {
+  animation: shine 1.2s linear forwards;
+}
+
+
+.services-swiper .swiper-wrapper {
+  justify-content: center;
+}
+
+@keyframes float-up {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+@keyframes float-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(18px); }
+}
+.animate-float-up {
+  animation: float-up 3.5s ease-in-out infinite;
+}
+.animate-float-down {
+  animation: float-down 3.5s ease-in-out infinite;
+}
+.delay-100 { animation-delay: 0.1s; }
+.delay-150 { animation-delay: 0.15s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-250 { animation-delay: 0.25s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+@keyframes gallery-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.gallery-marquee {
+  width: max-content;
+  min-width: 100%;
+  animation: gallery-marquee 40s linear infinite;
+  overflow: hidden;
+}
+@keyframes float-up {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+@keyframes float-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(18px); }
+}
+.animate-float-up {
+  animation: float-up 3.5s ease-in-out infinite;
+}
+.animate-float-down {
+  animation: float-down 3.5s ease-in-out infinite;
+}
+.delay-100 { animation-delay: 0.1s; }
+.delay-150 { animation-delay: 0.15s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-250 { animation-delay: 0.25s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }

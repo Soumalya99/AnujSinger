@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/microphone-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuj Sharma - Singer & Performer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body class="font-poppins text-gray-800 bg-light">
+    <div id="loader" class="fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-[9999] transition-opacity duration-500 ease-out visibility-transition">
+      <div class="spinner"></div>
+    </div>
+    
+    <header id="header" class="bg-white text-black py-4 fixed w-full top-0 left-0 z-50 shadow-md">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="logo flex items-center space-x-2">
+          <a href="index.html" class="flex items-center text-2xl font-bold font-playfair-display text-black hover:text-secondary transition-colors">
+            <img 
+              src="Black Minimalist typograph Brand music logo_20250502_002543_0000.png" 
+              alt="Anuj Sharma Logo" 
+              class="h-12 w-50 object-cover border-2 border-black shadow-md "
+            />
+          </a>
+        </div>
+        <nav id="navbar">
+          <ul class="nav-menu hidden md:flex space-x-6">
+            <li><a href="./index.html" class="nav-link text-black hover:text-amber-600 transition-colors duration-300 font-semibold active">Home</a></li>
+            <li><a href="./about.html" class="nav-link text-black hover:text-amber-600 transition-colors duration-300 font-semibold">About</a></li>
+            <li><a href="./music.html" class="nav-link text-black hover:text-amber-600 transition-colors duration-300 font-semibold">Music</a></li>
+            <li><a href="./gallery.html" class="nav-link text-black hover:text-amber-600 transition-colors duration-300 font-semibold">Gallery</a></li>
+            <li><a href="./contact.html" class="nav-link text-black hover:text-amber-600 transition-colors duration-300 font-semibold">Contact</a></li>
+          </ul>
+          <div class="hamburger md:hidden cursor-pointer space-y-1.5">
+            <span class="bar block w-6 h-0.5 bg-black transition-all duration-300"></span>
+            <span class="bar block w-6 h-0.5 bg-black transition-all duration-300"></span>
+            <span class="bar block w-6 h-0.5 bg-black transition-all duration-300"></span>
+          </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+      <section id="home"
+        class="hero relative h-screen bg-cover bg-center flex items-center justify-center text-center text-white"
+        style="padding-top: 64px;">
+        <!-- Background Video -->
+        <video class="absolute inset-0 w-full h-full object-cover z-0" src="./images/AnujSharma_Video.mp4" 
+
+          autoplay
+          muted
+          loop
+          playsinline
+          ></video>
+        <div class="hero-overlay absolute inset-0 bg-black opacity-40 z-10"></div>
+        <div class="hero-content relative z-20 px-4">
+          <h1 class="text-3xl md:text-4xl font-semibold font-playfair-display mb-4 animate-fade-in drop-shadow-lg">Anuj Sharma
+          </h1>
+          <p class="subtitle text-xl md:text-2xl mb-8 animate-fade-in delay-1 drop-shadow-md">A Voice That Connects Hearts
+          </p>
+          <div class="cta-buttons flex justify-center space-x-4 animate-fade-in delay-2">
+            <a href="#contact"
+              class="btn btn-primary bg-yellow-600 hover:bg-orange-400 text-gray-900 py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">Book
+              Now</a>
+            <a href="#music"
+              class="btn btn-secondary border border-secondary text-secondary py-3 px-8 rounded-full text-lg font-semibold hover:bg-secondary hover:text-gray-900 transition-all duration-300 shadow-lg">Listen</a>
+          </div>
+        </div>
+      </section>
+
+    <section id="about" class="section py-16 bg-stone-200 text-black">
+        <div class="container mx-auto px-4">
+            <!-- Top: Four small images centered -->
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-0 mb-8">
+                <img src="./images/iid1Logo.png" alt="About 1" class="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover shadow-lg" />
+                <img src="./images/renown.png" alt="About 2" class="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover shadow-lg" />
+                <img src="./images/award.png" alt="About 3" class="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover shadow-lg" />
+                <img src="./images/live.png" alt="About 4" class="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover shadow-lg" />
+            </div>
+            <!-- Main Row: Two columns -->
+            <div class="flex flex-col md:flex-row gap-10 lg:gap-16 items-center md:items-stretch">
+                <!-- Left: Swiper Card Gallery, centered vertically -->
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <div class="swiper about-swiper w-full max-w-md">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex justify-center">
+                                <img src="./images/IMG_8007.jpg" alt="Anuj Sharma 1"
+                                    class="rounded-2xl shadow-2xl w-full object-contain h-64 md:h-90 " />
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="./images/ANUJ.jpg" alt="Anuj Sharma 2"
+                                    class="rounded-2xl shadow-2xl w-full object-contain h-64 md:h-90 " />
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="./images//IMG_8014.jpg" alt="Anuj Sharma 3"
+                                    class="rounded-2xl shadow-2xl w-full object-contain h-64 md:h-90 " />
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="./images/IMG_8123.jpg" alt="Anuj Sharma 4"
+                                    class="rounded-2xl shadow-2xl w-full object-contain h-64 md:h-90 " />
+                            </div>
+                            <!-- Add more slides as needed -->
+                        </div>
+                        <div class="swiper-pagination mt-4"></div>
+                    </div>
+                </div>
+                <!-- Right: About Content, vertically centered -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-center text-center md:text-left">
+                    <h3 class="text-3xl md:text-3xl font-medium italic font-playfair-display mb-10 text-orange-500 drop-shadow">
+                        About Anuj Sharma
+                    </h3>
+                    <div class="space-y-4 max-w-xl">
+                        <p class="text-sm md:text-base text-black leading-relaxed">
+                            Born in Rehan, Himachal Pradesh, Anuj Sharma’s musical journey began early, deeply inspired by his elder
+                            brother, a scientist and his greatest supporter. What started as a childhood passion took shape during
+                            his college years, where stage performances revealed music as his true calling.
+                        </p>
+                        <p class="text-sm md:text-base text-black leading-relaxed">
+                            Anuj rose to national recognition as the <span class="font-bold text-[#FFD700]">runner-up of Indian Idol
+                                Season 2 (2006)</span>, a pivotal moment that launched his career as a professional singer. Since
+                            then, he has continued to build his legacy, collaborating for over a decade with acclaimed music
+                            director <span class="font-bold text-[#FFD700]">Hitesh (Swar Mystry)</span>. Together, they’ve crafted
+                            melodies that are rich in emotion, depth, and originality.
+                        </p>
+                        <p class="text-sm md:text-base text-black leading-relaxed">
+                            Anuj believes music is more than sound — it’s a story, a connection, and a feeling. His soulful voice
+                            and heartfelt performances continue to touch lives and resonate with audiences across generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="youtube" class="py-16 bg-stone-300 text-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-semibold font-playfair-display text-red-400 text-center mb-10">
+                Watch & Listen on YouTube
+            </h2>
+            <div class="flex justify-center">
+                <div class="w-full max-w-3xl aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-[#FFD700]/30 bg-black">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/06nldnAjTq0" title="Anuj Sharma Latest Hit Video"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" style="background: #000;">
+                    </iframe>
+                </div>
+                </div>
+            <p class="text-center text-black mt-6">
+                <a href="https://www.youtube.com/@idolanuj" target="_blank" rel="noopener"
+                    class="text-black hover:underline font-semibold">
+                    Visit Anuj Sharma's YouTube Channel
+                    <i class="fab fa-youtube ml-2 text-red-500"></i>
+                </a>
+            </p>
+        </div>
+    </section>
+
+    </main>
+
+        <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="footer-content grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <!-- Left: Logo & Description -->
+                <div class="footer-logo flex flex-col items-center md:items-start">
+                    <div class="flex items-center mb-3">
+                        <!-- Logo image (optional, update src as needed) -->
+                        <img src="./images/channels4_profile.jpg" alt="Anuj Sharma Logo"
+                            class="h-12 w-12 rounded-full object-cover mr-3 shadow-lg border-2 border-[#FFD700] bg-white" />
+                        <span class="text-3xl font-bold font-playfair-display text-[#FFD700]">Anuj Sharma</span>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-xs text-center md:text-left">
+                        A Voice That Connects Hearts. Singer, performer, and storyteller inspiring audiences across
+                        generations.
+                    </p>
+                </div>
+                <!-- Right: Nav Links (Quick Links + Services) -->
+                <div class="md:col-span-2 flex flex-col md:flex-row justify-end gap-8 w-full">
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-[#FFD700]">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="./index.html"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Home</a>
+                            </li>
+                            <li><a href="./about.html"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">About</a>
+                            </li>
+                            <li><a href="./music.html"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Music</a>
+                            </li>
+                            <li><a href="./contact.html"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Services -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-[#FFD700]">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#services"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Live
+                                    Performances</a></li>
+                            <li><a href="#services"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Music
+                                    Production</a></li>
+                            <li><a href="#services"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Vocal
+                                    Training</a></li>
+                            <li><a href="#services"
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Concert
+                                    Tours</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2025 Anuj Sharma. All Rights Reserved.</p>
+                <ul class="flex justify-center space-x-4 mt-4">
+                    <li><a href="#"
+                            class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300 text-sm">Privacy
+                            Policy</a></li>
+                    <li><a href="#"
+                            class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300 text-sm">Terms
+                            of Service</a></li>
+                </ul>
+                <p class="text-xs text-gray-500 mt-4">
+                    Designed by <span class="text-[#FFD700] font-semibold">Think nXt media</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
