@@ -8,7 +8,8 @@ export default defineConfig({
         about: 'about.html',
         music: 'music.html',
         gallery: 'gallery.html',
-        contact: 'contact.html'
+        newsMedia: 'newsMedia.html',
+        contact: 'contact.html',
       }
     }
   }
