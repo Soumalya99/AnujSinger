@@ -49,6 +49,9 @@
                             class="nav-link text-black hover:text-yellow-700 transition-colors duration-300 font-semibold">News
                             & Media</a>
                     </li>
+                    <li><a href="./digitalpr.html"
+                            class="nav-link text-black hover:text-yellow-700 transition-colors duration-300 font-semibold">Digital PR</a>
+                    </li>
                     <li><a href="./contact.html"
                             class="nav-link text-black hover:text-yellow-700 transition-colors duration-300 font-semibold">Contact</a>
                     </li>
@@ -63,71 +66,90 @@
     </header>
 
     <main>
-        <section class="gallery-section py-20 bg-zinc-100 text-black overflow-x-hidden">
+        <section class="gallery-section py-20 bg-zinc-100 text-black overflow-x-hidden overflow-y-hidden">
             <div class="container mx-auto px-4">
                 <h1 class="text-4xl font-medium font-playfair-display mt-8 text-center mb-8">Gallery</h1>
-                <p class="text-center text-lg font-playfair-display mb-12">Explore the moments captured through the lens of Anuj
+                <p class="text-center text-xl font-semibold font-playfair-display mb-12">Explore the moments captured through the lens of Anuj
                     Sharma.</p>
-                <!-- Marquee wrapper -->
-                <div class="relative w-full overflow-x-hidden">
-                    <div class="gallery-marquee flex gap-6 animate-gallery-marquee overflow-visible">
-                        <!-- Gallery Item 1 -->
-                        <div class="gallery-item animate-float-up">
-                            <img src="./images/ANUJ.jpg" alt="Gallery Image 5"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                <!-- Marquee wrapper: right to left -->
+                <div class="relative w-full overflow-hidden">
+                    <div class="gallery-marquee">
+                        <!-- Gallery Items (repeat for seamless loop) -->
+                        <div class="gallery-item">
+                            <img src="./images/ANUJ.jpg" alt="Gallery Image 5" />
                         </div>
-                        <!-- Gallery Item 2 -->
-                        <div class="gallery-item animate-float-down">
-                            <img src="./images/IMG_8007.jpg" alt="Gallery Image 2"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8014.jpg" alt="Gallery Image 7" />
                         </div>
-                        <!-- Gallery Item 3 -->
-                        <div class="gallery-item animate-float-up delay-200">
-                            <img src="./images/IMG_8014.jpg" alt="Gallery Image 7"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8142 2.jpg" alt="Gallery Image 8" />
                         </div>
-                        <!-- Gallery Item 4 -->
-                        <div class="gallery-item animate-float-down delay-100">
-                            <img src="./images/IMG_8123.jpg" alt="Gallery Image 1"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8154.jpg"
+                            alt="Gallery Image 3" />
                         </div>
-                        <!-- Gallery Item 5 -->
-                        <div class="gallery-item animate-float-up delay-300">
-                            <img src="./images/IMG_8011.jpg" alt="Gallery Image 8"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/Anuj (1).jpg" alt="Gallery Image 1" />
                         </div>
-                        <!-- Gallery Item 6 -->
-                        <div class="gallery-item animate-float-down delay-150">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_-tpCDpguskF2KjNZQV_qlVjwf0UI9hi-lQ&s"
-                                alt="Gallery Image 3"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8129 2.jpg"
+                            alt="Gallery Image 3" />
                         </div>
-                        <!-- Gallery Item 7 -->
-                        <div class="gallery-item animate-float-up delay-400">
+                        <div class="gallery-item">
+                            <img src="./images/IMG_9447.jpg"
+                            alt="Gallery Image 3" />
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8908.jpg" alt="Gallery Image 2" />
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8124.jpg"
+                                alt="Gallery Image 3" />
+                        </div>
+                        <!-- ...repeat as needed for smooth loop -->
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto mt-7 px-4">
+                <!-- Marquee wrapper: left to right -->
+                <div class="relative w-full overflow-hidden">
+                    <div class="gallery-marquee reverse">
+                        <!-- Gallery Items (repeat for seamless loop) -->
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8011.jpg" alt="Gallery Image 8" />
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8017.jpg" alt="Gallery Image 1" />
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8014.jpg" alt="Gallery Image 7" />
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8007.jpg" alt="Gallery Image 2" />
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/Anuj (1).jpg" alt="Gallery Image 5" />
+                        </div>
+                        <div class="gallery-item">
                             <img src="https://pbs.twimg.com/profile_images/1491818845123715097/ps5CN6cF_400x400.jpg"
-                                alt="Gallery Image 6"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                                alt="Gallery Image 6" />
                         </div>
-                        <!-- Gallery Item 8 -->
-                        <div class="gallery-item animate-float-down delay-250">
-                            <img src="https://i.ytimg.com/vi/ArDCJLkN660/oar2.jpg?sqp=-oaymwEYCK0DENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBu-D5DO3_7Qy9GKs2QLPd5wTL6gA"
-                                alt="Gallery Image 4"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <!-- <img src="./images/IMG_1820 (1).JPG" alt="Gallery Image 2" /> -->
                         </div>
-                        <!-- Duplicate for seamless marquee -->
-                        <div class="gallery-item animate-float-up">
-                            <img src="./images/ANUJ.jpg" alt="Gallery Image 5"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/IMG_8017.jpg" alt="Gallery Image 1" />
                         </div>
-                        <div class="gallery-item animate-float-down">
-                            <img src="./images/IMG_8007.jpg" alt="Gallery Image 2"
-                                class="w-44 h-72 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 object-cover mx-auto" />
+                        <div class="gallery-item">
+                            <img src="./images/IMG_9447.jpg" alt="Gallery Image 2" />
                         </div>
                         <!-- ...repeat as needed for smooth loop -->
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Second Section: left to right -->
     
     </main>
 
@@ -138,11 +160,11 @@
                 <div class="footer-logo flex flex-col items-center md:items-start">
                     <div class="flex items-center mb-3">
                         <!-- Logo image (optional, update src as needed) -->
-                        <img src="./images/channels4_profile.jpg" alt="Anuj Sharma Logo"
-                            class="h-12 w-12 rounded-full object-cover mr-3 shadow-lg border-2 border-[#FFD700] bg-white" />
-                        <span class="text-3xl font-bold font-playfair-display text-[#FFD700]">Anuj Sharma</span>
+                        <img src="Black Minimalist typograph Brand music logo_20250502_002543_0000.png"
+                            alt="Anuj Sharma Logo" class="h-30 object-cover w-50" />
+                        <!-- <span class="text-3xl font-bold font-playfair-display text-[#FFD700]">Anuj Sharma</span> -->
                     </div>
-                    <p class="text-gray-400 text-sm max-w-xs text-center md:text-left">
+                    <p class="text-gray-100 text-base max-w-xs text-center md:text-left ml-3">
                         A Voice That Connects Hearts. Singer, performer, and storyteller inspiring audiences across
                         generations.
                     </p>
@@ -163,7 +185,8 @@
                                     class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Music</a>
                             </li>
                             <li><a href="./newsMedia.html"
-                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">News & Media</a>
+                                    class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">News &
+                                    Media</a>
                             </li>
                             <li><a href="./contact.html"
                                     class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300">Contact</a>
@@ -196,8 +219,7 @@
                     <li><a href="#"
                             class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300 text-sm">Privacy
                             Policy</a></li>
-                    <li><a href="#"
-                            class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300 text-sm">Terms
+                    <li><a href="#" class="text-gray-400 hover:text-[#FFD700] transition-colors duration-300 text-sm">Terms
                             of Service</a></li>
                 </ul>
                 <p class="text-xs text-gray-500 mt-4">

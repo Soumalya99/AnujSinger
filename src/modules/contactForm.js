@@ -13,7 +13,7 @@ export function contactInit(){
       const message = document.getElementById('message').value.trim();
 
       // Format WhatsApp message
-      const whatsappNumber = '919876543210'; // Use country code, no + or spaces
+      const whatsappNumber = '919418050235'; // Use country code, no + or spaces
       const text =
         `New Booking Request:%0A` +
         `Name: ${name}%0A` +

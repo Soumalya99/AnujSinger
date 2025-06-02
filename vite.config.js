@@ -9,6 +9,7 @@ export default defineConfig({
         music: 'music.html',
         gallery: 'gallery.html',
         newsMedia: 'newsMedia.html',
+        digitalPR: 'digitalpr.html',
         contact: 'contact.html',
       }
     }

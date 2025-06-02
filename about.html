@@ -43,6 +43,9 @@
                             class="nav-link text-black hover:text-yellow-700 transition-colors duration-300 font-semibold">News
                             & Media</a>
                     </li>
+                    <li><a href="./digitalpr.html"
+                            class="nav-link text-black hover:text-yellow-700 transition-colors duration-300 font-semibold">Digital PR</a>
+                    </li>
                     <li><a href="./contact.html"
                             class="nav-link text-black hover:text-yellow-700 transition-colors duration-300 font-semibold">Contact</a>
                     </li>
@@ -75,10 +78,69 @@
           <p class="subtitle text-xl md:text-2xl mb-8 animate-fade-in delay-1 drop-shadow-md">A Voice That Connects Hearts
           </p>
           <div class="cta-buttons flex justify-center space-x-4 animate-fade-in delay-2">
-            <a href="#contact"
-              class="btn btn-primary bg-yellow-600 hover:bg-orange-400 text-gray-900 py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">Book
-              Now</a>
-            <a href="#music"
+            <a href="javascript:void(0);" id="book-now-btn"
+                class="btn btn-primary bg-yellow-600 hover:bg-orange-400 text-gray-900 py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
+                Book Now
+            </a>
+            <!-- Contact Modal Popup (centered, short, full width on mobile, scrollable background) -->
+            <div id="contact-modal-overlay"
+                class="fixed inset-0 z-50 bg-black/70 flex w-full items-center justify-center transition-opacity duration-200 hidden">
+                <div id="contact-modal"
+                class="relative w-full max-w-lg mx-2 bg-gradient-to-br from-black to-zinc-800 rounded-xl shadow-2xl p-6 md:p-8 flex flex-col max-h-[80vh] overflow-y-auto thin-scrollbar">
+                <button id="close-contact-modal"
+                    class="absolute top-3 right-3 text-2xl text-white bg-black/30 rounded-full w-9 h-9 flex items-center justify-center hover:text-red-400 hover:bg-black/60 transition"
+                    title="Close">&times;</button>
+                <h3 class="text-2xl md:text-3xl font-semibold font-playfair-display mb-4 text-white text-center">Book An Event
+                </h3>
+                <form id="booking-form" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                    <label for="name" class="block text-white text-sm font-semibold mb-1">Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full p-2 border border-gray-700 rounded bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" />
+                    </div>
+                    <div>
+                    <label for="email" class="block text-white text-sm font-semibold mb-1">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full p-2 border border-gray-700 rounded bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" />
+                    </div>
+                    <div>
+                    <label for="phone" class="block text-white text-sm font-semibold mb-1">Phone</label>
+                    <input type="tel" id="phone" name="phone" required
+                        class="w-full p-2 border border-gray-700 rounded bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" />
+                    </div>
+                    <div>
+                    <label for="event-type" class="block text-white text-sm font-semibold mb-1">Event Type</label>
+                    <select id="event-type" name="event-type" required
+                        class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent">
+                        <option value="">Select Event Type</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate Event</option>
+                        <option value="private">Private Party</option>
+                        <option value="concert">Concert</option>
+                        <option value="other">Other</option>
+                    </select>
+                    </div>
+                    <div class="md:col-span-2">
+                    <label for="event-date" class="block text-white text-sm font-semibold mb-1">Event Date</label>
+                    <input type="date" id="event-date" name="event-date" required
+                        class="w-full p-2 border border-gray-700 rounded bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" />
+                    </div>
+                    <div class="md:col-span-2">
+                    <label for="message" class="block text-white text-sm font-semibold mb-1">Additional Information</label>
+                    <textarea id="message" name="message" rows="2"
+                        class="w-full p-2 border border-gray-700 rounded bg-gray-900 text-white placeholder-gray-400 resize-y focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                    <button type="submit"
+                        class="btn btn-primary bg-amber-700 hover:bg-orange-500 text-white hover:text-black py-2 px-6 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md w-full border-2 border-white hover:border-white">
+                        Submit Request
+                    </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        
+            <a href="https://open.spotify.com/artist/0rvJPbysNRAFTcox3PtAH3?si=TSFTvEieRJq--Y9GEgm95w" target="_blank" rel="noopener noreferrer"
               class="btn btn-secondary border border-secondary text-secondary py-3 px-8 rounded-full text-lg font-semibold hover:bg-secondary hover:text-gray-900 transition-all duration-300 shadow-lg">Listen</a>
           </div>
         </div>
@@ -111,10 +173,6 @@
                                 <img src="./images//IMG_8014.jpg" alt="Anuj Sharma 3"
                                     class="rounded-2xl shadow-2xl w-full object-contain h-64 md:h-90 " />
                             </div>
-                            <div class="swiper-slide flex justify-center">
-                                <img src="./images/IMG_8123.jpg" alt="Anuj Sharma 4"
-                                    class="rounded-2xl shadow-2xl w-full object-contain h-64 md:h-90 " />
-                            </div>
                             <!-- Add more slides as needed -->
                         </div>
                         <div class="swiper-pagination mt-4"></div>
@@ -132,16 +190,35 @@
                             his college years, where stage performances revealed music as his true calling.
                         </p>
                         <p class="text-sm md:text-base text-black leading-relaxed">
-                            Anuj rose to national recognition as the <span class="font-bold text-[#FFD700]">runner-up of Indian Idol
+                            Anuj rose to national recognition as the <span class="font-bold text-amber-700">runner-up of Indian Idol
                                 Season 2 (2006)</span>, a pivotal moment that launched his career as a professional singer. Since
                             then, he has continued to build his legacy, collaborating for over a decade with acclaimed music
-                            director <span class="font-bold text-[#FFD700]">Hitesh (Swar Mystry)</span>. Together, they’ve crafted
+                            director <span class="font-bold text-amber-700">Hitesh (Swar Mystry)</span>. Together, they’ve crafted
                             melodies that are rich in emotion, depth, and originality.
                         </p>
                         <p class="text-sm md:text-base text-black leading-relaxed">
                             Anuj believes music is more than sound — it’s a story, a connection, and a feeling. His soulful voice
                             and heartfelt performances continue to touch lives and resonate with audiences across generations.
                         </p>
+                    </div>
+                    <h4 class="mt-4 font-playfair-display text-base font-semibold text-orange-700">Connect me on </h4>
+                    <div class="social-links flex justify-center space-x-4 mt-4">
+                        <a href="https://www.youtube.com/channel/UC_zR87OUDHIKrGs1YTLqgqw" target="_blank" rel="noopener noreferrer"
+                            class="social-icon w-10 h-10 flex items-center justify-center bg-red-500 rounded-full hover:bg-orange-600 transition-colors duration-300">
+                            <i class="fa-brands fa-youtube text-white text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/idolanuj/?hl=en" target="_blank" rel="noopener noreferrer"
+                            class="social-icon w-10 h-10 flex items-center justify-center bg-gradient-to-r from-indigo-600 via-pink-600 to-yellow-500 rounded-full  transition-colors duration-300">
+                            <i class="fa-brands fa-instagram text-white text-xl"></i>
+                        </a>
+                        <a href="https://open.spotify.com/artist/0rvJPbysNRAFTcox3PtAH3?si=TSFTvEieRJq--Y9GEgm95w" target="_blank" rel="noopener noreferrer"
+                            class="social-icon w-10 h-10 flex rounded-full items-center justify-center bg-gradient-to-r from-teal-800 via-green-600 to-green-400 transition-colors duration-300">
+                            <i class="fa-brands fa-spotify text-white text-xl"></i>
+                        </a>
+                        <a href="https://www.facebook.com/indianidolAnujsharmaofficial/" target="_blank" rel="noopener noreferrer"
+                            class="social-icon w-10 h-10 flex items-center justify-center bg-blue-600 rounded-full transition-colors duration-300">
+                            <i class="fa-brands fa-facebook text-white text-xl"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -172,18 +249,18 @@
 
     </main>
 
-        <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="footer-content grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <!-- Left: Logo & Description -->
                 <div class="footer-logo flex flex-col items-center md:items-start">
                     <div class="flex items-center mb-3">
                         <!-- Logo image (optional, update src as needed) -->
-                        <img src="./images/channels4_profile.jpg" alt="Anuj Sharma Logo"
-                            class="h-12 w-12 rounded-full object-cover mr-3 shadow-lg border-2 border-[#FFD700] bg-white" />
-                        <span class="text-3xl font-bold font-playfair-display text-[#FFD700]">Anuj Sharma</span>
+                        <img src="Black Minimalist typograph Brand music logo_20250502_002543_0000.png" alt="Anuj Sharma Logo"
+                            class="h-30 object-cover w-50" />
+                        <!-- <span class="text-3xl font-bold font-playfair-display text-[#FFD700]">Anuj Sharma</span> -->
                     </div>
-                    <p class="text-gray-400 text-sm max-w-xs text-center md:text-left">
+                    <p class="text-gray-100 text-base max-w-xs text-center md:text-left ml-3">
                         A Voice That Connects Hearts. Singer, performer, and storyteller inspiring audiences across
                         generations.
                     </p>
