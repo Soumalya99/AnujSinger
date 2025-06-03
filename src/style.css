@@ -11,7 +11,7 @@
   .font-playfair-display { font-family: 'Playfair Display', serif; }
 
 .marquee {
-  animation: marquee-scroll 40s linear infinite;
+  animation: marquee-scroll 24s linear infinite;
 }
 @keyframes marquee-scroll {
   0% {

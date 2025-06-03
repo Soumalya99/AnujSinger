@@ -12,6 +12,7 @@ import { swiperinit , swiperAbtgallery} from './modules/swiper.js';
 import { contactInit } from './modules/contactForm.js';
 import { serviceInit } from './modules/services.js';
 import { initContactModal } from './modules/contactModel.js';
+import { loadNextBatch } from './modules/videoCards.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   try {
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     swiperAbtgallery();
     initMusicTabs();
     initContactModal();
+    loadNextBatch();
     serviceInit();
     swiperinit();
     contactInit()
